@@ -39,7 +39,7 @@ except ImportError:
     psycopg2 = None
 
 STATS_QUERIES = ['SHOW POOLS', 'SHOW STATS']
-IGNORE_COLUMNS = ['user']
+IGNORE_COLUMNS = ['user', 'pool_mode']
 
 
 class PgbouncerCollector(diamond.collector.Collector):
